@@ -194,3 +194,125 @@
     width: 60px;
     height: 20px;
 }
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: top-moving 2s linear;
+}
+
+@keyframes top-moving {
+    0% {
+        left: 10%;
+    }
+
+    50% {
+        left: calc(100% - 60px);
+    }
+
+    100% {
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: bot-moving 2s linear;
+}
+
+@keyframes bot-moving {
+    0% {
+        right: 20%;
+    }
+
+    50% {
+        right: calc(100% - 60px);
+    }
+
+    100% {
+        right: 20%;
+    }
+}
+
+
+.ex-13-button:hover .ex-13-top-white {
+    /* background-color: red; */
+    /* test */
+    animation: top-round 2s linear;
+}
+
+@keyframes top-round {
+    0% {
+        top: -10px;
+        left: 10%;
+    }
+
+    20% {
+        top: -10px;
+        left: 100%;
+        transform: translate(-50%, 0);
+    }
+
+    40% {
+        top: calc(100% - 10px);
+
+        left: 100%;
+        transform: translate(-50%, 0);
+    }
+
+    60% {
+        top: calc(100% - 10px);
+        left: 0;
+        transform: translateX(-50%);
+    }
+
+    80% {
+        top: -10px;
+        left: 0;
+        transform: translateX(-50%);
+    }
+
+    100% {
+        top: -10px;
+        left: 10%;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    /* background-color: red; */
+    /* test */
+    animation: bot-round 2s linear;
+}
+
+@keyframes bot-round {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+
+    20% {
+        bottom: -10px;
+        right: 100%;
+        transform: translate(50%, 0);
+    }
+
+    40% {
+        bottom: calc(100% - 10px);
+        right: 100%;
+        transform: translate(50%, 0);
+    }
+
+    60% {
+        bottom: calc(100% - 10px);
+        right: 0;
+        transform: translateX(50%);
+    }
+
+    80% {
+        bottom: -10px;
+        right: 0;
+        transform: translateX(50%);
+    }
+
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
+}
