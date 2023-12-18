@@ -128,6 +128,38 @@
     font-size: 60px;
 }
 
+
+.ex-11-icon:hover {
+    font-size: 60px;
+    animation-name: spin2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes spin2 {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(0.25turn);
+    }
+
+    50% {
+        transform: rotate(0.50turn);
+    }
+
+    75% {
+        transform: rotate(0.75turn);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+
+
+}
+
 .ex-12-button,
 .ex-13-button {
     position: relative;
